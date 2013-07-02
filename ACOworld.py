@@ -209,6 +209,8 @@ class ACOworld_tk():
                 for i in xrange(MAP_WIDTH):
 			for j in xrange(MAP_HEIGHT):
                                 self.map[i][j].unset_blocked()
+		self.clear_map()
+		self.draw_map()
                 
         def clear_map(self):
                 self.cmap.delete(ALL)
